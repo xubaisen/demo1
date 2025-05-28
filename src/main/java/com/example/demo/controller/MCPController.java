@@ -30,7 +30,7 @@ public class MCPController {
     @GetMapping("/chat")
     public String chat(@RequestParam String message) {
         System.out.printf("===============");
-        return chatClient.prompt("北京今天天气怎么样？").call().content();
+        return chatClient.prompt(message).call().content();
     }
 
 }

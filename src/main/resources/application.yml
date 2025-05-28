@@ -26,3 +26,7 @@ spring:
             server1:
               #              url: http://appbuilder.baidu.com/v2/ai_search/mcp/sse?api_key=Bearer+<AppBuilder API Key>
               url: http://127.0.0.1:8080
+
+
+        stdio:
+          servers-configuration: classpath:mcp-servers.json
