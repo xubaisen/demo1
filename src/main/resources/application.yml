@@ -1,0 +1,28 @@
+server:
+  port: 8888
+
+spring:
+  application: mcp-client
+  ai:
+    openai:
+      api-key: sk-952c2bb3db7a47eead349cb277b35c06
+      base-url: https://api.deepseek.com
+      chat:
+        api-key: sk-952c2bb3db7a47eead349cb277b35c06
+        base-url: https://api.deepseek.com
+        options:
+          model: deepseek-chat
+
+    mcp:
+      client:
+        name: ai-mcp-client
+        toolcallback:
+          enabled: true
+        enabled: true
+        initialized: true
+        type: SYNC
+        sse:
+          connections:
+            server1:
+              #              url: http://appbuilder.baidu.com/v2/ai_search/mcp/sse?api_key=Bearer+<AppBuilder API Key>
+              url: http://127.0.0.1:8080
